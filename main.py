@@ -21,7 +21,7 @@ def get_menu():
         types.KeyboardButton("/change_name"),
         types.KeyboardButton("Занять место в очереди"),
         types.KeyboardButton("Посмотреть очередь"),
-        types.KeyboardButton("Сдвинуть очередь на 1"),
+        # types.KeyboardButton("Сдвинуть очередь на 1"),
         types.KeyboardButton("Я ответил!"),
         types.KeyboardButton("Выйти из очереди")
     )
