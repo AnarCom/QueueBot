@@ -21,3 +21,14 @@ class User(BaseModel):
 
     class Meta:
         table_name = 'users'
+
+
+class Queue(BaseModel):
+    id = AutoField(column_name='id')
+    user = ForeignKeyField(
+        User,
+        column_name='user_id',
+    )
+
+    class Meta:
+        table_name = 'queue'
