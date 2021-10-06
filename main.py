@@ -8,7 +8,6 @@ from entities import User, Queue
 bot = telebot.TeleBot(os.environ['TELEGRAM_TOKEN'])
 if __name__ == '__main__':
     DbConn()
-    DbConn().cursor.execute("SELECT strftime('%s', 'now')")
     results = DbConn().cursor.fetchall()
     print(results)
     execute_migrations(DbConn().cursor)
